@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #575757;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.list {
+  display: flex;
+}
+.item {
+  width: 16px;
+  height: 16px;
+}

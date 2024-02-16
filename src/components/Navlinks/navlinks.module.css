@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  font-size: 20px;
+  line-height: 150%;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.header,
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header {
+  justify-content: space-between;
+  width: 760px;
+  padding: 20px 0;
+}
+.navigation {
+  gap: 20px;
+}
+.logo {
+  /* color: #000; */
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.item {
+  /* color: #000; */
+  font-size: 20px;
+  line-height: 150%;
+  cursor: pointer;
+}

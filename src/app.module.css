@@ -1,0 +1,12 @@
+.hero {
+  margin-left: 80px;
+  margin-bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-start; */
+}

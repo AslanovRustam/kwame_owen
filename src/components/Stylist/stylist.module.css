@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 80px 160px;
+}
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.mozaik {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.mozaikEl1,
+.mozaikEl2,
+.mozaikEl3,
+.mozaikEl4,
+.mozaikEl5 {
+  position: relative;
+  display: flex;
+  height: 473px;
+  width: 370px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #e6e6e6;
+}
+.mozaikEl1 {
+  width: 890px;
+  background: #b3b3b3;
+}
+.mozaikEl5 {
+  width: 500px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  padding: 14px 26px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left,
+.right,
+.leftNew {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.right {
+  background: #fff;
+  color: #151515;
+}
+.arrow,
+.arrowNew {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+  /* stroke: #151515; */
+}
+.right:hover .arrow,
+.right:focus .arrow {
+  transform: translate(5px, -5px);
+}
+.buttomButtons {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 100%;
+  height: 68px;
+  border-radius: 10px;
+  background: #fff;
+}
+.arrowNew {
+  margin-left: 0;
+}
+.buttomButtons:hover .arrowNew,
+.buttomButtons:focus .arrowNew {
+  transform: translate(5px, -5px);
+}
+.leftNew {
+  width: 71%;
+}

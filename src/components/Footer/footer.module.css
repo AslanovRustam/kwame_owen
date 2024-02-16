@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  padding: 40px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  font-size: 20px;
+  line-height: normal;
+}
+
+.socialIcon,
+.socialIconInst {
+  width: 32px;
+  height: 32px;
+  fill: black;
+  cursor: pointer;
+}
+.socialIconInst {
+  margin-right: 20px;
+}
+.links {
+  text-align: right;
+  margin-top: 10px;
+}
