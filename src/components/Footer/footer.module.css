@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
+  border-top: 1px solid #f0f0f0;
 }
 .logo {
   font-size: 40px;
@@ -29,6 +30,13 @@
   height: 32px;
   fill: black;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.socialIcon:hover,
+.socialIconInst:hover,
+.socialIcon:focus,
+.socialIconInst:focus {
+  scale: 1.1;
 }
 .socialIconInst {
   margin-right: 20px;

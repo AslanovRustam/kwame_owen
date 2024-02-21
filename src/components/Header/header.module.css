@@ -5,7 +5,8 @@
 }
 .header {
   justify-content: space-between;
-  width: 760px;
+  /* width: 760px; */
+  width: 100%;
   padding: 20px 0;
 }
 .navigation {

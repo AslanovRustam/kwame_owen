@@ -1,0 +1,78 @@
+.container {
+  margin: 0 80px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 51px;
+  margin: 50px 0 40px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  width: 393px;
+  height: 852px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 8px solid #e6e6e6;
+  /* background: #fff; */
+}
+.text {
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  flex: 1 0 0;
+}
+.appDownload {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 240px;
+  height: 64px;
+  padding: 16px;
+  gap: 16px;
+  margin: 0 auto 80px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.logo {
+  width: 24px;
+  height: 28px;
+  fill: #000;
+  transition: all 0.3s ease-in-out;
+}
+.down {
+  font-size: 14px;
+  font-weight: 500;
+}
+.from {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.appDownload:hover,
+.appDownload:focus {
+  border: 1px solid #000;
+  background: #151515;
+  color: #fff;
+}
+.appDownload:hover .logo,
+.appDownload:focus .logo {
+  fill: white;
+}
