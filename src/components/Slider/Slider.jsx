@@ -15,14 +15,16 @@ import image5 from "../../images/slider/Image5.png";
 const Slider = () => {
   const [swiperActiveIndex, setSwiperActiveIndex] = useState(2);
   const data = [
-    { id: 0, title: "Haircut", content: image1 },
-    // { id: 1, title: "kid’s Haircut", content: image2 },
-    { id: 2, title: "beard trim", content: image3 },
-    { id: 3, title: "haircut", content: image4 },
-    { id: 4, title: "kid’s Haircut", content: image1 },
-    { id: 5, title: "beard trim", content: image3 },
-    { id: 6, title: "haircut", content: image4 },
-    // { id: 4, title: "beard trim", content: image5 },
+    { id: 0, title: "beard trim", content: image1 },
+    { id: 1, title: "kid’s Haircut", content: image2 },
+    { id: 2, title: "Haircut", content: image3 },
+    { id: 3, title: "beard trim", content: image4 },
+    { id: 4, title: "Haircut", content: image5 },
+    { id: 5, title: "beard trim", content: image1 },
+    { id: 6, title: "kid’s Haircut", content: image2 },
+    { id: 7, title: "Haircut", content: image3 },
+    { id: 8, title: "beard trim", content: image4 },
+    { id: 9, title: "Haircut", content: image5 },
   ];
 
   return (
@@ -42,9 +44,10 @@ const Slider = () => {
               <div
                 className={`${s.item} ${idx === swiperActiveIndex && s.active}`}
               >
-                <div className={s.swiperContent}>
-                  <img src={content} alt={title} className={s.image} />
-                </div>
+                <div
+                  className={s.swiperContent}
+                  style={{ backgroundImage: `url(${content})` }}
+                ></div>
                 <p className={s.swiperTitle}>{title}</p>
               </div>
             </SwiperSlide>

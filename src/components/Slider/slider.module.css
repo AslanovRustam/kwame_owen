@@ -28,29 +28,26 @@
   scale: 0.9;
   background: #252926;
   transition: all 0.3s ease-in-out;
-  filter: brightness(0.7);
+  filter: grayscale(1);
 }
 .swiperContent {
+  height: 160px;
+  width: auto;
   display: flex;
-  /* height: 160px; */
-  /* padding: 0px 50px; */
-  /* justify-content: center;
-  align-items: center;
-  flex-shrink: 0; */
   border-radius: 10px;
-  /* background: #e6e6e6;
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 120%;
-  text-transform: uppercase; */
-  object-fit: contain;
+  overflow: hidden;
+  object-fit: cover;
+  flex: 0 0 auto;
+  align-self: stretch;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.image {
+/* .image {
   width: 100%;
-  height: auto;
+  height: 160px;
   border-radius: 10px;
-}
+} */
 .swiperTitle {
   font-size: 20px;
   font-weight: 500;
@@ -59,7 +56,8 @@
 }
 .active {
   scale: 1;
-  filter: brightness(1);
+  filter: grayscale(0);
+
   /* padding: 20px;
   width: 320px;
   height: 320px; */
