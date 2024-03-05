@@ -1,12 +1,12 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   margin: 0 80px 160px;
 }
 .title {
-  text-align: center;
+  /* text-align: center; */
   font-size: 40px;
   font-weight: 600;
   line-height: 120%;
@@ -34,15 +34,42 @@
   flex-shrink: 0;
   border-radius: 20px;
   background: #e6e6e6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+  transition: all 0.3s ease-in-out;
 }
 .mozaikEl1 {
   width: 890px;
   background: #b3b3b3;
+  background-image: url(../../images/Card1.png);
+}
+.mozaikEl2 {
+  background-image: url(../../images/Card2.png);
+}
+.mozaikEl3 {
+  background-image: url(../../images/Card3.png);
+}
+.mozaikEl4 {
+  background-image: url(../../images/Card4.png);
 }
 .mozaikEl5 {
   width: 500px;
+  background-image: url(../../images/Card5.png);
 }
-
+.mozaikEl1:hover,
+.mozaikEl1:focus,
+.mozaikEl2:hover,
+.mozaikEl2:focus,
+.mozaikEl3:hover,
+.mozaikEl3:focus,
+.mozaikEl4:hover,
+.mozaikEl4:focus,
+.mozaikEl5:hover,
+.mozaikEl5:focus {
+  filter: brightness(1);
+}
 .list {
   display: flex;
   align-items: center;
@@ -56,6 +83,7 @@
   border-radius: 10px;
   border: 1px solid #fff;
   color: #fff;
+  background: rgba(255, 255, 255, 0.2);
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -75,6 +103,7 @@
   align-items: center;
   border-radius: 10px;
   border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
   font-size: 20px;
   font-weight: 600;

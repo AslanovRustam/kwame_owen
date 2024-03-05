@@ -1,10 +1,12 @@
 import s from "./info.module.css";
 import star from "../../images/star.png";
 
-const Info = ({ name, date }) => {
+const Info = ({ name, date, avatar }) => {
   return (
     <div className={s.container}>
-      <div className={s.circle}></div>
+      <div className={s.circle}>
+        <img src={avatar} alt={name} />
+      </div>
       <div className={s.info}>
         <p className={s.name}>{name}</p>
         <ul className={s.list}>

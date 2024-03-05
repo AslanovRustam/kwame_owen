@@ -7,15 +7,15 @@ const MobApp = () => {
       <h2 className={s.title}>our app for your easy booking</h2>
       <ul className={s.list}>
         <li className={s.item}>
-          <div className={s.wrapper}></div>
+          <div className={s.wrapper1}></div>
           <p className={s.text}>MAKE AN APPOINTMENT</p>
         </li>
         <li className={s.item}>
-          <div className={s.wrapper}></div>
+          <div className={s.wrapper2}></div>
           <p className={s.text}>MAKE PAYMENTS</p>
         </li>
         <li className={s.item}>
-          <div className={s.wrapper}></div>
+          <div className={s.wrapper3}></div>
           <p className={s.text}>TRACK YOUR BARBER</p>
         </li>
       </ul>

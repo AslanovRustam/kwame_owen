@@ -1,14 +1,17 @@
 .slider {
   position: relative;
-  margin: 234px 0 160px;
+  margin: 80px 0 160px;
 }
+/* .sliderWrapper {
+  margin-left: -150px;
+} */
 .title {
   font-size: 40px;
   font-weight: 600;
   line-height: 120%;
   text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 90px;
+  /* text-align: center; */
+  margin: 0 0 90px 80px;
 }
 .item {
   display: flex;
@@ -21,25 +24,32 @@
   gap: 20px;
   flex-shrink: 0;
   border-radius: 20px;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #000;
   scale: 0.9;
-  background: #f5f5f5;
+  background: #252926;
   transition: all 0.3s ease-in-out;
+  filter: brightness(0.7);
 }
 .swiperContent {
   display: flex;
-  height: 160px;
-  padding: 0px 50px;
-  justify-content: center;
+  /* height: 160px; */
+  /* padding: 0px 50px; */
+  /* justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+  flex-shrink: 0; */
   border-radius: 10px;
-  background: #e6e6e6;
+  /* background: #e6e6e6;
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
-  text-transform: uppercase;
+  text-transform: uppercase; */
+  object-fit: contain;
+}
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 .swiperTitle {
   font-size: 20px;
@@ -49,6 +59,7 @@
 }
 .active {
   scale: 1;
+  filter: brightness(1);
   /* padding: 20px;
   width: 320px;
   height: 320px; */
@@ -69,7 +80,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 1px solid #151515;
+  border: 1px solid white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -79,19 +90,18 @@
 .arrow {
   width: 19px;
   height: 18px;
-  fill: #151515;
-  stroke: #151515;
+  stroke: white;
   transition: all 0.3s ease-in-out;
 }
 .btnPrev:hover,
 .btnNext:hover,
 .btnPrev:focus,
 .btnNext:focus {
-  background-color: #151515;
+  background-color: white;
 }
 .btnPrev:hover .arrow,
 .btnNext:hover .arrow,
 .btnPrev:focus .arrow,
 .btnNext:focus .arrow {
-  stroke: white;
+  stroke: black;
 }

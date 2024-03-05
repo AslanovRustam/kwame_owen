@@ -6,39 +6,52 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import { useState } from "react";
 import NavBtn from "./NavBtn";
+import image1 from "../../images/slider/Image1.png";
+import image2 from "../../images/slider/Image2.png";
+import image3 from "../../images/slider/Image3.png";
+import image4 from "../../images/slider/Image4.png";
+import image5 from "../../images/slider/Image5.png";
+
 const Slider = () => {
   const [swiperActiveIndex, setSwiperActiveIndex] = useState(2);
   const data = [
-    { id: 0, title: "Haircut", content: "image" },
-    { id: 1, title: "kid’s Haircut", content: "image" },
-    { id: 2, title: "haircut", content: "image" },
-    { id: 3, title: "beard trim", content: "image" },
-    { id: 4, title: "beard trim", content: "image" },
-    { id: 5, title: "kid’s Haircut", content: "image" },
-    { id: 6, title: "beard trim", content: "image" },
+    { id: 0, title: "Haircut", content: image1 },
+    // { id: 1, title: "kid’s Haircut", content: image2 },
+    { id: 2, title: "beard trim", content: image3 },
+    { id: 3, title: "haircut", content: image4 },
+    { id: 4, title: "kid’s Haircut", content: image1 },
+    { id: 5, title: "beard trim", content: image3 },
+    { id: 6, title: "haircut", content: image4 },
+    // { id: 4, title: "beard trim", content: image5 },
   ];
 
   return (
     <div className={s.slider} id="services">
       <h2 className={s.title}>Services</h2>
-      <Swiper
-        modules={[Navigation, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView="5"
-        onSlideChange={(swiper) => setSwiperActiveIndex(swiper.activeIndex + 2)}
-      >
-        {data.map(({ id, title, content }, idx) => (
-          <SwiperSlide key={id}>
-            <div
-              className={`${s.item} ${idx === swiperActiveIndex && s.active}`}
-            >
-              <div className={s.swiperContent}>{content}</div>
-              <p className={s.swiperTitle}>{title}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-        <NavBtn />
-      </Swiper>
+      <div className={s.sliderWrapper}>
+        <Swiper
+          modules={[Navigation, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView="5.1"
+          onSlideChange={(swiper) =>
+            setSwiperActiveIndex(swiper.activeIndex + 2)
+          }
+        >
+          {data.map(({ id, title, content }, idx) => (
+            <SwiperSlide key={id}>
+              <div
+                className={`${s.item} ${idx === swiperActiveIndex && s.active}`}
+              >
+                <div className={s.swiperContent}>
+                  <img src={content} alt={title} className={s.image} />
+                </div>
+                <p className={s.swiperTitle}>{title}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+          <NavBtn />
+        </Swiper>
+      </div>
     </div>
   );
 };

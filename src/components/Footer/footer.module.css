@@ -6,6 +6,7 @@
   align-items: flex-start;
   gap: 20px;
   border-top: 1px solid #f0f0f0;
+  background: #707a73;
 }
 .logo {
   font-size: 40px;
@@ -28,7 +29,7 @@
 .socialIconInst {
   width: 32px;
   height: 32px;
-  fill: black;
+  fill: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }

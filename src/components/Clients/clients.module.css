@@ -31,7 +31,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #f0f0f0;
+  background: #707a73;
   backdrop-filter: blur(33.333335876464844px);
 }
 .containerGreyLast {
@@ -57,7 +57,8 @@
   flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid #f0f0f0;
-  background: #fff;
+  background: #b9beba;
+  color: #141414;
 }
 .innerBtn {
   position: relative;
@@ -79,6 +80,7 @@
   line-height: normal;
   letter-spacing: -0.4px;
   text-transform: uppercase;
+  color: #000;
 }
 .arrowClients {
   width: 21px;

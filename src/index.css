@@ -21,9 +21,11 @@ body {
   line-height: normal;
   scroll-behavior: smooth;
   /* font-size: 0.833vw; */
-  color: #000;
+  /* color: #000; */
+  color: #ffffff;
   /* height: 100dvh; */
   overflow-x: hidden;
+  background-color: #4f5c53;
 }
 * {
   margin: 0;
@@ -40,7 +42,7 @@ video {
   height: auto;
 }
 a {
-  color: #000;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
 @font-face {

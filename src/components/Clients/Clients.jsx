@@ -1,6 +1,9 @@
 import Info from "../Info/Info";
 import s from "./clients.module.css";
 import arrowClients from "../../images/arrowClients.png";
+import avatar from "../../images/avatar.png";
+import avatar1 from "../../images/avatar1.png";
+import avatar2 from "../../images/avatar2.png";
 
 const Clients = () => {
   return (
@@ -14,7 +17,11 @@ const Clients = () => {
               "The barber understood exactly what I wanted and delivered it
               flawlessly. The place exudes professionalism and style."
             </p>
-            <Info name="Cameron Williamson" date="31.01.2024" />
+            <Info
+              name="Cameron Williamson"
+              date="31.01.2024"
+              avatar={avatar1}
+            />
           </div>
           <div className={s.containerGrey}>
             <div className={s.innerBtn}>
@@ -34,7 +41,7 @@ const Clients = () => {
               "They've taken the time to thoroughly grasp our objectives, target
               audience, and the impact we aspire to achieve."
             </p>
-            <Info name="Guy Hawkins" date="04.02.2024" />
+            <Info name="Guy Hawkins" date="04.02.2024" avatar={avatar} />
           </div>
           <div className={s.containerText}>
             <p className={s.text}>
@@ -42,7 +49,7 @@ const Clients = () => {
               to detail in the cut was impressive, and the atmosphere was
               friendly and inviting."
             </p>
-            <Info name="Robert Fox" date="08.12.2023" />
+            <Info name="Robert Fox" date="08.12.2023" avatar={avatar2} />
           </div>
           <div className={s.containerGreyHalf}></div>
         </div>
